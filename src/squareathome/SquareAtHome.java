@@ -21,20 +21,17 @@ public class SquareAtHome extends Application {
     
     @Override
     public void start(Stage primaryStage) {
-        Button btn = new Button();
-        btn.setText("Say 'Hello World'");
-        btn.setOnAction(new EventHandler<ActionEvent>() {
-            
-            @Override
-            public void handle(ActionEvent event) {
-                System.out.println("Hello World!");
-            }
-        });
+        int width = 600;
+        
         
         StackPane root = new StackPane();
-        root.getChildren().add(btn);
+        root.getChildren().add(root);
         
-        Scene scene = new Scene(root, 300, 250);
+        Scene scene = new Scene(root, width, width);
+        
+        
+        
+        
         
         primaryStage.setTitle("Hello World!");
         primaryStage.setScene(scene);
